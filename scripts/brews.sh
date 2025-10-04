@@ -44,33 +44,21 @@ echo "Homebrew is ready to use!"
 #
 echo "Installing applications and tools via Homebrew..."
 brew install \
-  asciiquarium \
   bash \
-  cmatrix \
   dockutil \
   fd \
-  fossil \
   fzf \
   gh \
   git \
   gnupg \
-  go \
   htop \
-  lastpass-cli \
-  lazygit \
-  luarocks \
-  mas \
   mongosh \
-  neofetch \
   nvm \
   ripgrep \
   s3cmd \
-  sst/tap/opencode \
   stow \
-  stylua \
   tmux \
   tree \
-  watchman \
   wget \
   yazi \
   zig
@@ -83,30 +71,14 @@ brew install mongodb-community@5.0
 
 # Install cask applications
 brew install --cask \
-    android-platform-tools \
     brave-browser \
     claude-code \
     docker \
-    easyeda \
-    freetube \
     ghostty \
     google-chrome \
-    logisim-evolution \
-    microsoft-office \
-    microsoft-teams \
-    mullvad-vpn \
-    obsidian \
-    postman \
-    raycast \
     the-unarchiver \
-    thonny \
-    visual-studio-code \
-    vlc \
     warp \
-    whatsapp \
-    youtube-downloader \
-    zed \
-    zoom
+    zed 
 
 # Post-install message
 echo "Installation complete. Review output for any issues."

@@ -6,6 +6,16 @@ PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 PATH="/Users/ben/local/lua-5.1/bin/:$PATH"
 export PATH
 
+# start ssh-agent if not running
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+  eval "$(ssh-agent -s)" > /dev/null
+fi
+
+# add key if agent has none
+if ! ssh-add -l >/dev/null 2>&1; then
+  ssh-add ~/.ssh/id_ed25519 </dev/null
+fi
+
 
 # PS1='$ %~/ '
 setopt prompt_subst
@@ -22,6 +32,7 @@ source <(fzf --zsh)
 
 alias dot="cd ~/dotfiles"
 alias zet="cd ~/second-brain"
+alias docker=podman
 
 setopt globdots
 
