@@ -51,12 +51,12 @@ automatically-unhide-macos-hidden-apps = false
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-    inner.horizontal = 9
-    inner.vertical =   9
-    outer.left =       9
-    outer.bottom =     9
-    outer.top =        9
-    outer.right =      9
+    inner.horizontal = 10
+    inner.vertical =   10
+    outer.left =       10
+    outer.bottom =     10
+    outer.top =        10
+    outer.right =      10
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -92,8 +92,8 @@ automatically-unhide-macos-hidden-apps = false
     # '''
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-    alt-space = 'layout tiles horizontal vertical'
-    #alt-period = 'layout accordion horizontal vertical'
+    alt-slash = 'layout tiles horizontal vertical'
+    #alt-comma = 'layout accordion horizontal vertical'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
     alt-h = 'focus left'
@@ -112,17 +112,17 @@ automatically-unhide-macos-hidden-apps = false
     alt-equal = 'resize smart +50'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-#    alt-1 = 'workspace 1'
-#    alt-2 = 'workspace 2'
-#    alt-3 = 'workspace 3'
-#    alt-4 = 'workspace 4'
-#    alt-5 = 'workspace 5'
-#    alt-6 = 'workspace 6'
-#    alt-7 = 'workspace 7'
-#    alt-8 = 'workspace 8'
-#    alt-9 = 'workspace 9'
-    alt-a = 'workspace A'
-    alt-b = 'workspace B' # browser
+    # alt-1 = 'workspace 1'
+    # alt-2 = 'workspace 2'
+    # alt-3 = 'workspace 3'
+    # alt-4 = 'workspace 4'
+    # alt-5 = 'workspace 5'
+    # alt-6 = 'workspace 6'
+    # alt-7 = 'workspace 7'
+    # alt-8 = 'workspace 8'
+    # alt-9 = 'workspace 9'
+    alt-a = 'workspace A' # In your config, you can drop workspace bindings that you don't need
+    alt-b = 'workspace B'
     alt-c = 'workspace C'
     alt-d = 'workspace D'
     alt-e = 'workspace E'
@@ -136,7 +136,7 @@ automatically-unhide-macos-hidden-apps = false
     alt-q = 'workspace Q'
     alt-r = 'workspace R'
     alt-s = 'workspace S'
-    alt-t = 'workspace T' # terminal
+    alt-t = 'workspace T'
     alt-u = 'workspace U'
     alt-v = 'workspace V'
     alt-w = 'workspace W'
@@ -145,15 +145,15 @@ automatically-unhide-macos-hidden-apps = false
     alt-z = 'workspace Z'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-#    alt-shift-1 = 'move-node-to-workspace 1'
-#    alt-shift-2 = 'move-node-to-workspace 2'
-#    alt-shift-3 = 'move-node-to-workspace 3'
-#    alt-shift-4 = 'move-node-to-workspace 4'
-#    alt-shift-5 = 'move-node-to-workspace 5'
-#    alt-shift-6 = 'move-node-to-workspace 6'
-#    alt-shift-7 = 'move-node-to-workspace 7'
-#    alt-shift-8 = 'move-node-to-workspace 8'
-#    alt-shift-9 = 'move-node-to-workspace 9'
+    # alt-shift-1 = 'move-node-to-workspace 1'
+    # alt-shift-2 = 'move-node-to-workspace 2'
+    # alt-shift-3 = 'move-node-to-workspace 3'
+    # alt-shift-4 = 'move-node-to-workspace 4'
+    # alt-shift-5 = 'move-node-to-workspace 5'
+    # alt-shift-6 = 'move-node-to-workspace 6'
+    # alt-shift-7 = 'move-node-to-workspace 7'
+    # alt-shift-8 = 'move-node-to-workspace 8'
+    # alt-shift-9 = 'move-node-to-workspace 9'
     alt-shift-a = 'move-node-to-workspace A'
     alt-shift-b = 'move-node-to-workspace B'
     alt-shift-c = 'move-node-to-workspace C'
@@ -183,15 +183,15 @@ automatically-unhide-macos-hidden-apps = false
     #alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
-    alt-shift-comma = 'mode service'
+    alt-shift-semicolon = 'mode service'
 
+    alt-enter = "exec-and-forget open -n /Applications/Ghostty.app"
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
     esc = ['reload-config', 'mode main']
     r = ['flatten-workspace-tree', 'mode main'] # reset layout
     f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
-    b = ['mode main'] # just go back to main mode
     backspace = ['close-all-windows-but-current', 'mode main']
 
     # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
@@ -202,6 +202,6 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-k = ['join-with up', 'mode main']
     alt-shift-l = ['join-with right', 'mode main']
 
-    #down = 'volume down'
-    #up = 'volume up'
-    #shift-down = ['volume set 0', 'mode main']
+    down = 'volume down'
+    up = 'volume up'
+    shift-down = ['volume set 0', 'mode main']
