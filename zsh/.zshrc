@@ -1,9 +1,6 @@
 # ---- PATH edits first ----
 PATH=$PATH:/Users/ben/Library/Android/sdk/platform-tools
-PATH="$HOME/dotfiles/scripts:$PATH"
 PATH="/opt/homebrew/bin:$PATH"
-PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
-PATH="/Users/ben/local/lua-5.1/bin/:$PATH"
 export PATH
 
 # start ssh-agent if not running
@@ -16,8 +13,7 @@ if ! ssh-add -l >/dev/null 2>&1; then
   ssh-add ~/.ssh/id_ed25519 </dev/null
 fi
 
-
-# PS1='$ %~/ '
+# PS1='\n$ %~/ '
 setopt prompt_subst
 
 git_branch() {
@@ -25,7 +21,7 @@ git_branch() {
         [[ -n "$ref" ]] && echo "($ref)"
 }
 
-PS1='$ %~ $(git_branch) '
+PS1=$'\n$ %~ $(git_branch) '
 
 
 source <(fzf --zsh)
