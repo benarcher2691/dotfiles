@@ -1,8 +1,8 @@
 {
-  "numStartups": 11,
+  "numStartups": 13,
   "installMethod": "homebrew",
   "tipsHistory": {
-    "new-user-warmup": 9,
+    "new-user-warmup": 11,
     "plan-mode-for-complex-tasks": 8,
     "memory-command": 2,
     "theme-command": 2,
@@ -21,7 +21,9 @@
     "tab-toggle-thinking": 4,
     "ultrathink-keyword": 4,
     "shift-enter": 9,
-    "custom-agents": 7
+    "custom-agents": 7,
+    "permissions": 12,
+    "custom-commands": 13
   },
   "cachedStatsigGates": {
     "tengu_disable_bypass_permissions_mode": false,
@@ -90,6 +92,22 @@
     "/Users/ben/dotfiles": {
       "allowedTools": [],
       "history": [
+        {
+          "display": "way too much. think harder the output should be like \"Opus 4.1 $ /Users/ben/dotfiles (main)\"\n\n {\n  \"id\": \"Opus 4.1\",\n  \"display_name\": \"Opus 4.1\"\n  } $ /Users/ben/dotfiles (main)",
+          "pastedContents": {}
+        },
+        {
+          "display": "thats too much info :-) i just want a short model name like 'Sonet 4.5'\n\n [{\n  \"id\": \"claude-opus-4-1-20250805\",\n  \"display_name\": \"Opus 4.1\"\n  }] $ /Users/ben/dotfiles (main)",
+          "pastedContents": {}
+        },
+        {
+          "display": "nice. pls add model used first in statusLine",
+          "pastedContents": {}
+        },
+        {
+          "display": "/statusline ",
+          "pastedContents": {}
+        },
         {
           "display": "/exit",
           "pastedContents": {}
@@ -187,18 +205,7 @@
         "lsp.lua"
       ],
       "exampleFilesGeneratedAt": 1759608004337,
-      "lastTotalWebSearchRequests": 0,
-      "lastCost": 0,
-      "lastAPIDuration": 0,
-      "lastToolDuration": 0,
-      "lastDuration": 15244,
-      "lastLinesAdded": 0,
-      "lastLinesRemoved": 0,
-      "lastTotalInputTokens": 0,
-      "lastTotalOutputTokens": 0,
-      "lastTotalCacheCreationInputTokens": 0,
-      "lastTotalCacheReadInputTokens": 0,
-      "lastSessionId": "e1b4bab9-133c-4e7c-8470-1d546efe18c8"
+      "lastTotalWebSearchRequests": 0
     }
   },
   "sonnet45MigrationComplete": true,
