@@ -1,6 +1,7 @@
 # ---- PATH edits first ----
 PATH=$PATH:/Users/ben/Library/Android/sdk/platform-tools
 PATH="/opt/homebrew/bin:$PATH"
+PATH="$HOME/.local/bin:$PATH"
 export PATH
 
 # start ssh-agent if not running
@@ -10,7 +11,7 @@ fi
 
 # add key if agent has none
 if ! ssh-add -l >/dev/null 2>&1; then
-  ssh-add ~/.ssh/id_ed25519 </dev/null
+  ssh-add ~/.ssh/id_ed25519_ben_archer </dev/null
 fi
 
 # PS1='\n$ %~/ '
